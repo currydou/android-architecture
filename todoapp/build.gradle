@@ -1,6 +1,9 @@
 buildscript {
     repositories {
-        jcenter()
+//        jcenter()
+        //下载auto-value(在项目的 Gradle 文件里，配置国内源（将 jcenter（）注掉或者删掉)
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 
     }
     dependencies {
@@ -13,7 +16,10 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+//        jcenter()
+        //下载auto-value(在项目的 Gradle 文件里，配置国内源（将 jcenter（）注掉或者删掉)
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
         mavenLocal()
     }
 }
